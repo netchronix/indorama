@@ -1,0 +1,87 @@
+{
+        "chart": {
+            "containerBackgroundOpacity" : 0,
+            "baseFontColor" : "#fff",
+            "bgColor": "#434760",
+            "showCanvasBorder" : 0,
+            "canvasBgColor" : "#434760",
+            "valueFontSize" : 11,
+            "showXAxisLine": "0",
+            "divLineThickness" : 0,
+            "valueFontBold" : 1,
+            "theme": "fint"
+        },
+        "data": [{
+            "label": "1AM",
+            "value": "320",
+            "color": "#6baa01"
+        }, {
+            "label": "2AM",
+            "value": "380",
+            "color": "#6baa01"
+        }, {
+            "label": "3AM",
+            "value": "330",
+            "color": "#6baa01"
+        }, {
+            "label": "4AM",
+            "value": "360",
+            "color": "#6baa01"
+        }, {
+            "label": "5AM",
+            "value": "520",
+            "color": "#e44a00"
+        }, {
+            "label": "6AM",
+            "value": "390",
+            "color": "#6baa01"
+        },{
+            "label": "7AM",
+            "value": "260",
+            "color": "#FF8F00"
+        }, {
+            "label": "8AM",
+            "value": "350",
+            "color": "#6baa01"
+        }, {
+            "label": "9AM",
+            "value": "370",
+            "color": "#6baa01"
+        }, {
+            "label": "10AM",
+            "value": "240",
+            "color": "#FF8F00"
+        }, {
+            "label": "11AM",
+            "value": "400",
+            "color": "#6baa01"
+        }, {
+            "label": "12PM",
+            "value": "390",
+            "color": "#6baa01"
+        }, {
+            "label": "1PM",
+            "value": "380",
+            "color": "#6baa01"
+        }, {
+            "label": "2PM",
+            "value": "550",
+            "color": "#e44a00"
+        },{
+            "label": "3PM",
+            "value": "395",
+            "color": "#6baa01"
+        }, {
+            "label": "4PM",
+            "value": "345",
+            "color": "#6baa01"
+        }, {
+            "label": "5PM",
+            "value": "415",
+            "color": "#6baa01"
+        }, {
+            "label": "6PM",
+            "value": "250",
+            "color": "#FF8F00"
+        }]
+    }

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="css/style.css">
+	  <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+	      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <script  src="js/index.js"></script>
+    <script type="text/javascript">
+    	$.getJSON('test1.json', function(dataa){
+    		var run = dataa;
+    		document.getElementById("run").innerHTML = run;
+    		if (run == "Stopped") {
+    			document.getElementById("run").style.backgroundColor = 'red'; 
+    			document.getElementById("run").style.color = 'white'; 
+    			
+    		}
+    	});
+    </script>
+</head>
+<body>
+
+<div class="line-num">
+	<h1>PSF | FL #3</h1>
+</div>
+
+<div class="tiles">
+
+<div class="tile2">
+	<div class="tile2-head">
+	<h4><i class="fa fa-dot-circle-o" aria-hidden="true"></i>Cumulative Status</h4>
+	</div>
+	<div id="doughnutChart" class="chart"></div>
+</div>
+
+<div class="tile1">
+	<div class="tile1-head">
+	<h4><i class="fa fa-dot-circle-o" aria-hidden="true"></i>Current Status</h4>
+	</div>
+	<h3 class="stat" id="run">Running</h3>
+
+</div>
+
+<div class="tile4">
+	<a href="merge.html">
+	<div class="tile2-head">
+	<h4><i class="fa fa-dot-circle-o" aria-hidden="true"></i>Merge Number<i class="fa fa-arrow-circle-right" aria-hidden="true" style="float: right;"></i></h4>
+	</div>
+	<h3 class="bat">TF00000034</h3>
+</a>
+</div>
+
+<div class="tile3">
+	<a href="viewbatch.html">
+	<div class="tile1-head">
+	<h4><i class="fa fa-dot-circle-o" aria-hidden="true"></i>Running Batch<i class="fa fa-arrow-circle-right" aria-hidden="true" style="float: right;"></i></h4>
+	</div>
+	<h3 class="bat">173014</h3>
+</a>
+</div>
+
+<div class="tile5">
+	<div class="tile2-head">
+	<h4><i class="fa fa-dot-circle-o" aria-hidden="true"></i>Last Updated</h4>
+	</div>
+	<h3 class="bat">2018-01-12 10:30:56</h3>
+</div>
+
+<div class="tile6">
+	<a href="prod-data.html">
+	<div class="tile2-head">
+	<h4><i class="fa fa-dot-circle-o" aria-hidden="true"></i>Production Data<i class="fa fa-arrow-circle-right" aria-hidden="true" style="float: right;"></i></h4>
+	</div>
+	<img src="bar1.gif" style="width: 40%; float: right;">
+	<div class="pdata"> 
+	<h5>Gross Weight : 680.7 KG</h5>
+	<h5>Net Weight : 677.5 KG</h5>
+	<h5>Quantity : 677.5</h5>
+	<h5>Tare Weight : 300.2 KG</h5><br><br>
+	</div>
+</a>
+</div><br>
+
+<div class="tile7">
+	<a href="processparam.html">
+	<div class="tile7-head">
+	<h3><i class="fa fa-cogs" aria-hidden="true"></i> View Process Parameters</h3>
+	</div></a>
+</div>
+		
+
+
+</div><br><br><br><br><br><br>
+<div class="icon-bar" style="position: fixed;">
+  <a class="active" href="index.html"><i class="fa fa-check-circle" aria-hidden="true"><p>RTS</p></i></a> 
+  <a href="history.html"><i class="fa fa-history" aria-hidden="true"><p>History</p></i></a> 
+  <a href="alerts.html"><i class="fa fa-bell" aria-hidden="true"><p>Alerts</p></i></a> 
+  <a href="details.html"><i class="fa fa-info-circle" aria-hidden="true"><p>Details</p></i></a>
+</div>
+</body>
+</html>

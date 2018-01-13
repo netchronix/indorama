@@ -1,0 +1,63 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="style2.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+<script type="text/javascript" src="http://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
+<script type="text/javascript" src="http://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.fint.js?cacheBust=56"></script>
+<script type="text/javascript">
+  FusionCharts.ready(function(){
+    var fusioncharts = new FusionCharts({
+    "width": "100%",
+    "height": "100%",
+    containerBackgroundOpacity :'0',
+    type: 'doughnut2d',
+    renderAt: 'chart-container',
+
+    dataFormat: 'json',
+    dataSource: {
+        "chart": {
+        	"valueFontSize" : 12,
+        	"containerBackgroundOpacity" : 0,
+            "baseFontColor" : "#fff",
+            "valueFontBold" : 1,
+            "bgColor": "#434760",
+            "showCanvasBorder" : 0,
+            "canvasBgColor" : "#434760",
+            "startingAngle": "310",
+            "decimals": "5",
+            "useDataPlotColorForLabels": "1",
+            "theme": "fint"
+        },
+        "data": [{
+            "label": "Grade A",
+            "value": "1080"
+        }, {
+            "label": "Grade B",
+            "value": "96"
+        }, {
+            "label": "Grade C",
+            "value": "24"
+        }]
+    }
+}
+);
+        fusioncharts.render();
+});
+</script>
+</head>
+<body>
+<div class="line-num">
+	<h1>Running Batch Details</h1>
+</div>
+<h2 style="text-align: center; color: #bfc1d4;">Total Bales : 1200 / 1500</h2>
+  <div id="chart-container" style="width: 100%; height: 280px;">FusionCharts XT will load here!</div>
+  <div class="icon-bar" style="position: fixed;">
+  <a class="active" href="index.html"><i class="fa fa-check-circle" aria-hidden="true"><p>RTS</p></i></a> 
+  <a href="history.html"><i class="fa fa-history" aria-hidden="true"><p>History</p></i></a> 
+  <a href="alerts.html"><i class="fa fa-bell" aria-hidden="true"><p>Alerts</p></i></a> 
+  <a href="details.html"><i class="fa fa-info-circle" aria-hidden="true"><p>Details</p></i></a>
+</div>
+</body>
+</html>

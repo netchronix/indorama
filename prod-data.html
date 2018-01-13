@@ -1,0 +1,107 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="style2.css">
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+<script type="text/javascript" src="http://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
+<script type="text/javascript" src="http://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.fint.js?cacheBust=56"></script>
+<script type="text/javascript">
+  FusionCharts.ready(function(){
+    var fusioncharts = new FusionCharts({
+    type: 'mscolumn2d',
+    renderAt: 'chart-container',
+    "width": "100%",
+    "height": "100%",
+    containerBackgroundOpacity :'0',
+    dataFormat: 'json',
+    dataSource: {
+        "chart": {
+            "plotFillAlpha": "80",
+            "containerBackgroundOpacity" : 0,
+            "canvasBgColor" : "#434760",
+            "bgColor": "#434760",
+            "paletteColors": "#0075c2,#1aaf5d",
+            "hoverColor" : "#000",
+            "baseFontColor": "#8a8a8a",
+            "baseFont": "Helvetica Neue,Arial",
+            "showBorder": "0",
+            "showShadow": "0",
+            "canvasBorderAlpha": "0",
+            "divlineAlpha": "100",
+            "divlineColor": "#999999",
+            "divlineThickness": "0",
+            "divLineIsDashed": "1",
+            "divLineDashLen": "1",
+            "divLineGapLen": "1",
+            "usePlotGradientColor": "0",
+            "showplotborder": "0",
+            "valueFontColor": "#ffffff",
+            "placeValuesInside": "1",
+            "showHoverEffect": "1",
+            "rotateValues": "1",
+            "showXAxisLine": "1",
+            "xAxisLineThickness": "1",
+            "xAxisLineColor": "#999999",
+            "showAlternateHGridColor": "0",
+            "legendBgAlpha": "0",
+            "legendBorderAlpha": "0",
+            "legendShadow": "0",
+            "valueFontSize" : "14",
+            "legendItemFontSize": "12",
+            "legendItemFontColor": "#ffffff"
+        },
+        "categories": [{
+            "category": [{
+                "label": "Net Weight"
+            }, {
+                "label": "Gross Weight"
+            }, {
+                "label": "Tare Weight"
+            }, {
+                "label": "Quantity"
+            }]
+        }],
+        "dataset": [{
+            "seriesname": "Yesterday",
+            "data": [{
+                "value": "640"
+            }, {
+                "value": "620"
+            }, {
+                "value": "145"
+            }, {
+                "value": "750"
+            }]
+        }, {
+            "seriesname": "Today",
+            "data": [{
+                "value": "660"
+            }, {
+                "value": "680"
+            }, {
+                "value": "176"
+            }, {
+                "value": "890"
+            }]
+        }]
+    }
+}
+);
+    fusioncharts.render();
+});
+</script>
+</head>
+<body>
+<div class="line-num">
+	<h1>Production data</h1>
+</div>
+  <div id="chart-container" style="width: 100%; height: 320px;">FusionCharts XT will load here!</div>
+  <div class="icon-bar" style="position: fixed;">
+  <a class="active" href="index.html"><i class="fa fa-check-circle" aria-hidden="true"><p>RTS</p></i></a> 
+  <a href="history.html"><i class="fa fa-history" aria-hidden="true"><p>History</p></i></a> 
+  <a href="alerts.html"><i class="fa fa-bell" aria-hidden="true"><p>Alerts</p></i></a> 
+  <a href="details.html"><i class="fa fa-info-circle" aria-hidden="true"><p>Details</p></i></a>
+</div>
+</body>
+</html>

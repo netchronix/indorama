@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style1.css">
+	<link rel="stylesheet" href="css/style.css">
+	  <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+	      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <script  src="js/index.js"></script>
+    <script type="text/javascript">
+    	$.getJSON('test1.json', function(dataa){
+    		var run = dataa;
+    		document.getElementById("run").innerHTML = run;
+    		if (run == "Stopped") {
+    			document.getElementById("run").style.backgroundColor = 'red'; 
+    			document.getElementById("run").style.color = 'white'; 
+    			
+    		}
+    	});
+    </script>
+</head>
+<body>
+
+<div class="line-num">
+	<h1>Merge Details</h1>
+</div>
+
+<div class="tiles">
+
+	<div class="tile4">
+	<a href="hviewbatch.html">
+	<div class="tile2-head">
+	<h4><i class="fa fa-dot-circle-o" aria-hidden="true"></i>Batch 2 <i class="fa fa-arrow-circle-right" aria-hidden="true" style="float: right;"></i> </h4>
+	</div>
+	<h3 class="bat1">173014</h3><br>
+</a>
+	</div>
+
+	<div class="tile4">
+		<a href="hviewbatch.html">
+	<div class="tile2-head">
+	<h4><i class="fa fa-dot-circle-o" aria-hidden="true"></i>Batch 1<i class="fa fa-arrow-circle-right" aria-hidden="true" style="float: right;"></i> </h4>
+	</div>
+	<h3 class="bat1">173015</h3><br>
+</a>
+	</div>
+
+	<div class="tile4">
+		<a href="hviewbatch.html">
+	<div class="tile2-head">
+	<h4><i class="fa fa-dot-circle-o" aria-hidden="true"></i>Batch 4 <i class="fa fa-arrow-circle-right" aria-hidden="true" style="float: right;"></i></h4>
+	</div>
+	<h3 class="bat1">173016</h3><br>
+</a>
+	</div>
+
+<div class="tile4">
+		<a href="hviewbatch.html">
+	<div class="tile2-head">
+	<h4><i class="fa fa-dot-circle-o" aria-hidden="true"></i>Batch 3 <i class="fa fa-arrow-circle-right" aria-hidden="true" style="float: right;"></i></h4>
+	</div>
+	<h3 class="bat1">173017</h3><br>
+</a>
+	</div>
+
+
+
+		
+
+
+</div><br><br><br><br><br><br>
+<div class="icon-bar" style="position: fixed;">
+  <a href="index.html"><i class="fa fa-check-circle" aria-hidden="true"><p>RTS</p></i></a> 
+  <a class="active" href="history.html"><i class="fa fa-history" aria-hidden="true"><p>History</p></i></a> 
+  <a  href="alerts.html"><i class="fa fa-bell" aria-hidden="true"><p>Alerts</p></i></a> 
+  <a href="details.html"><i class="fa fa-info-circle" aria-hidden="true"><p>Details</p></i></a>
+</div>
+</body>
+</html>

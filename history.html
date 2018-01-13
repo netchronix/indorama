@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style1.css">
+	<link rel="stylesheet" href="css/style.css">
+	  <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+	      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <script  src="js/index.js"></script>
+</head>
+<body>
+
+<div class="line-num">
+	<h1>Historical Data</h1>
+</div>
+
+<div class="tiles">
+<div class="container">
+      <h3 style="color: white;">Please select a date to view data</h3>
+      <form method="post" action="hindex.html">
+    <input type="date" name="date" placeholder="SELECT DATE" onchange="this.className=(this.value!=''?'has-value':'')"><br><br>
+<input type="submit" name="submit" value="Fetch Data" >
+
+    </div>
+
+
+</div><br><br><br><br><br><br>
+<div class="icon-bar" style="position: fixed;">
+  <a href="index.html"><i class="fa fa-check-circle" aria-hidden="true"><p>RTS</p></i></a> 
+  <a class="active" href="history.html"><i class="fa fa-history" aria-hidden="true"><p>History</p></i></a> 
+  <a href="alerts.html"><i class="fa fa-bell" aria-hidden="true"><p>Alerts</p></i></a> 
+  <a href="details.html"><i class="fa fa-info-circle" aria-hidden="true"><p>Details</p></i></a>
+</div>
+</body>
+</html>

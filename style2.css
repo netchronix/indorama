@@ -1,0 +1,62 @@
+body{
+	background-color: #434760;
+	margin: 0;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+.line-num{
+	background-color: #313246;
+	text-align: center;
+	padding: 15px;
+	margin-bottom: 20px;
+}
+
+.line-num h1{
+	margin:0;
+	color: #00dd8d;
+}
+#chart-container{
+	background-color: #434760;
+
+}
+
+.icon-bar {
+    width: 100%;
+    overflow: auto;
+    background-color: #313246;
+    display: block;
+    bottom: 0;
+    position: fixed;
+    -webkit-backface-visibility: hidden;
+    webkit-transform: translateZ(0);
+    -webkit-overflow-scrolling: touch;
+}
+
+.icon-bar a {
+    float: left;
+    width: 25%;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 0;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 20px;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+.active {
+    color: #00dd8d !important;
+}
+
+p{
+margin:8px 0px 0px 0px;
+font-size: 12px;
+}
+.fa-dot-circle-o{
+	font-size: 13px;
+	color: #00dd8d;
+	padding: 5px;
+}
+.g-head{
+	padding-left: 5%;
+	color: #bfc1d4;
+}
